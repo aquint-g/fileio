@@ -9,11 +9,13 @@ import (
     "log"
     "net/http"
     "io/ioutil"
-    //"encoding/json"
-
-
-
 )
+type fileIoResult struct {
+  Success   bool
+  Key       string
+  Link      string
+  Expiry    string
+}
 
 func createMultipartFormData(fieldName, fileName string) (bytes.Buffer, *multipart.Writer) {
     var b bytes.Buffer
