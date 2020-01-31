@@ -9,10 +9,6 @@ import (
     "log"
     "net/http"
     "io/ioutil"
-    //"encoding/json"
-
-
-
 )
 type fileIoResult struct {
   Success   bool
