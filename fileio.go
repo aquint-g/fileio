@@ -14,6 +14,12 @@ import (
 
 
 )
+type fileIoResult struct {
+  Success   bool
+  Key       string
+  Link      string
+  Expiry    string
+}
 
 func createMultipartFormData(fieldName, fileName string) (bytes.Buffer, *multipart.Writer) {
     var b bytes.Buffer
