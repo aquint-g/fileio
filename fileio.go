@@ -10,7 +10,7 @@ import (
     "net/http"
     "io/ioutil"
 )
-type fileIoResult struct {
+type FileIoResult struct {
   Success   bool
   Key       string
   Link      string
